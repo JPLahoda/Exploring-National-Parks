@@ -36,10 +36,9 @@ const HomePage = () => {
 
   return (
       <div className="home-page main-component">
-        <h2>Welcome to the National Parks Explorer</h2>
         {weather ? (
           <div id="weather-container">
-            <h3>Current Weather</h3>
+            <h3>Current Weather:</h3>
             <p>{`${weather.name}: ${weather.main.temp}°F, ${weather.weather[0].description}`}</p>
           </div>
         ) : (
